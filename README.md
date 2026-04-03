@@ -1,4 +1,4 @@
-# 🚗 RealTime‑DrowsyGuard – Hybrid Driver Drowsiness Detection System
+# RealTime‑DrowsyGuard – Hybrid Driver Drowsiness Detection System
 
 > **Real‑time hybrid driver drowsiness detection system** using **EAR, PERCLOS, MAR, Head Pose** with auto‑calibration and a weighted fatigue score (0–100).
 
@@ -37,19 +37,21 @@ Main repo: [RealTime‑DrowsyGuard](https://github.com/Himanshu-joshi986/RealTim
 | GUI                       | OpenCV overlays |
 
 ---
+## 📁 Project Structure
 
-## 📁 **Project Structure**
-DROWSINESS-ALERT-SYSTEM/
-├── main.py # Main loop, HUD, alarm logic
-├── ear_mar_utils.py # EAR, MAR, RollingMetric
-├── head_pose.py # Head pose estimator
-├── alarm.wav # Alert sound (place in root)
-├── requirements.txt # Python dependencies
-├── README.md # This file
+```
+RealTime-DrowsyGuard/
+│
+├── main.py                 # Main loop, HUD, alarm logic
+├── ear_mar_utils.py        # EAR, MAR, RollingMetric
+├── head_pose.py            # Head pose estimator (solvePnP)
+├── alarm.wav               # Alert sound (place in root)
+├── requirements.txt        # Python dependencies
+├── README.md               # This file
+│
 └── models/
-└── face_landmarker.task # Auto‑downloaded on first run (~3 MB)
-
-text
+    └── face_landmarker.task   # Auto-downloaded on first run (~3 MB)
+```
 
 ---
 
